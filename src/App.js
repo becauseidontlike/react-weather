@@ -67,6 +67,7 @@ let day = days[now.getDay()];
 let today = document.querySelector(".today");
 today.innerHTML = `${day}`;
 
+if (loaded) {
 return (
 <div className="App">
    <div className="container">
@@ -111,6 +112,7 @@ return (
 </div>
 
   );
+}
 }
 
 export default App;
