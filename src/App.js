@@ -69,8 +69,7 @@ today.innerHTML = `${day}`;
 
 return (
 <div className="App">
-    
-  <div className="container">
+   <div className="container">
      <div className="row align-items-start">
         <div className="col-3">
         <h1 className="myCity">{city}</h1>
