@@ -4,7 +4,7 @@ import React from "react";
 
 export default function App() {
 
- let form = (
+let form = (
     <form>
       <input type="search" className="form" placeholder="City..."></input>
       <input type="submit" value="Search" className="btn btn-outline-secondary"></input>
@@ -35,7 +35,7 @@ return (
         </div>
       </div>
       <div className="col-4">
-        <div className="addition">HUMIDITY: <span className="humid">65</span>% <br />WIND: <span className="speed">3</span>
+        <div className="addition">HUMIDITY: <span className="humid">65</span>% <br />WIND: <span className="speed">3 </span>
           m/s</div><br />
       </div>
     </div>
@@ -51,6 +51,36 @@ return (
         </h2>
       </div>
     </div>  
+    <br /><br /><br />
+    <div className="row align-items-start">
+      <div className="col">
+        <p className="day">MON</p>
+         <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="icon"></img>
+         <p className="temp">max 2℃ | min 0℃</p>
+      </div>
+      <div className="col">
+        <p className="day">TUE</p>
+         <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather" id="icon"></img>
+         <p className="temp">max 2℃ | min 0℃</p>
+      </div>
+      <div className="col">
+        <p className="day">WED</p>
+         <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="icon"></img>
+         <p className="temp">max 2℃ | min 0℃</p>
+      </div><div className="col">
+        <p className="day">THU</p>
+         <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather" id="icon"></img>
+         <p className="temp">max 2℃ | min 0℃</p>
+      </div><div className="col">
+        <p className="day">FRI</p>
+         <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="icon"></img>
+         <p className="temp">max 2℃ | min 0℃</p>
+      </div>
+      </div>
+
+
+
+
   </div>
   <Footer />
 </div>

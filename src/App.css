@@ -69,6 +69,10 @@ button {
   width: 100%;
 }
 
+p{
+  margin-bottom: 0;
+}
+
 .container {
   display: block;
   margin: 0 auto;
