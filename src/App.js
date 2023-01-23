@@ -3,7 +3,7 @@ import Footer from './Footer';
 import axios from 'axios';
 import React, { useState } from "react";
 
-function App() {
+export default function App() {
   const [city, setCity] = useState("");
   const [temp, setTemp] = useState("");
   const [description, setDescription] = useState("");
@@ -30,7 +30,7 @@ function handleQuery(event) {
     setCity(event.target.value);
   }
 
-  function showWeather(response) {
+ function showWeather(response) {
     setLoaded(true);
     setTemp(response.data.main.temp);
     setDescription(response.data.weather[0].description);
@@ -67,7 +67,7 @@ let day = days[now.getDay()];
 let today = document.querySelector(".today");
 today.innerHTML = `${day}`;
 
-if (loaded) {
+
 return (
 <div className="App">
    <div className="container">
@@ -110,9 +110,5 @@ return (
   </div>
   <Footer />
 </div>
-
-  );
-}
-}
-
-export default App;
+);
+} 
