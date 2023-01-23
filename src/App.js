@@ -1,11 +1,12 @@
 import './App.css';
 import Footer from './Footer';
 import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
 
 let form = (
-    <form>
+    <form className="d-flex justify-content-between">
       <input type="search" className="form" placeholder="City..."></input>
       <input type="submit" value="Search" className="btn btn-outline-secondary"></input>
       <input type="submit" value="Current" className="btn btn-outline-secondary"></input>
@@ -14,7 +15,7 @@ let form = (
 
 return (
 <div className="App">
-   <div className="container">
+  <div className="container">
      <div className="row align-items-start">
         <div className="col-3">
         <h1 className="myCity">Kraków</h1>
@@ -25,7 +26,7 @@ return (
     </div>
     <br /><br />
     <div className="row align-items-start">
-      <div className="col-8 bold">
+      <div className="col-8 additionalspace">
         <div>
           <div className="today">
             THURSDAY</div>LAST UPDATED: <span className="time"> 14:<span className="min">00</span></span><br /><span
@@ -51,36 +52,36 @@ return (
         </h2>
       </div>
     </div>  
-    <br /><br /><br />
+    <br /><br />
     <div className="row align-items-start">
-      <div className="col">
+      <div className="col-2">
         <p className="day">MON</p>
          <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="icon"></img>
          <p className="temp">max 2℃ | min 0℃</p>
       </div>
-      <div className="col">
+      <div className="col-2">
         <p className="day">TUE</p>
          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather" id="icon"></img>
          <p className="temp">max 2℃ | min 0℃</p>
       </div>
-      <div className="col">
+      <div className="col-2">
         <p className="day">WED</p>
          <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="icon"></img>
          <p className="temp">max 2℃ | min 0℃</p>
-      </div><div className="col">
+      </div><div className="col-2">
         <p className="day">THU</p>
          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather" id="icon"></img>
          <p className="temp">max 2℃ | min 0℃</p>
-      </div><div className="col">
+      </div><div className="col-2">
         <p className="day">FRI</p>
          <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="icon"></img>
          <p className="temp">max 2℃ | min 0℃</p>
+         </div><div className="col-2">
+        <p className="day">SAT</p>
+         <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="weather" id="icon"></img>
+         <p className="temp">max 2℃ | min 0℃</p>
       </div>
       </div>
-
-
-
-
   </div>
   <Footer />
 </div>
